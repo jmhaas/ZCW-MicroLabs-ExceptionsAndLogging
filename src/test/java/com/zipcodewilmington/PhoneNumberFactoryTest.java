@@ -21,7 +21,7 @@ public class PhoneNumberFactoryTest {
     }
 
     @Test
-    public void testCreatePhoneNumberSafely() {
+    public void testCreatePhoneNumberSafely(){
         // : Given
         int areaCode = 0;
         int centralOfficeCode = 0;
@@ -35,7 +35,7 @@ public class PhoneNumberFactoryTest {
     }
 
     @Test
-    public void testGetAreaCode() {
+    public void testGetAreaCode(){
         // : Given
         Integer areaCode = 302;
         int centralOfficeCode = 312;
@@ -49,7 +49,7 @@ public class PhoneNumberFactoryTest {
     }
 
     @Test
-    public void testGetCentralOfficeCode() {
+    public void testGetCentralOfficeCode(){
         // : Given
         int areaCode = 302;
         Integer centralOfficeCode = 312;
@@ -64,7 +64,7 @@ public class PhoneNumberFactoryTest {
 
 
     @Test
-    public void testPhoneLineCode() {
+    public void testPhoneLineCode(){
         // : Given
         int areaCode = 302;
         int centralOfficeCode = 312;
@@ -78,7 +78,7 @@ public class PhoneNumberFactoryTest {
     }
 
     @Test
-    public void testCreateRandomPhoneNumber() {
+    public void testCreateRandomPhoneNumber(){
         Logger.getGlobal().setLevel(Level.OFF);
         // : Given
         PhoneNumber[] phoneNumbers = PhoneNumberFactory.createRandomPhoneNumberArray(999);
@@ -88,6 +88,7 @@ public class PhoneNumberFactoryTest {
 
             // : Then
             Assert.assertTrue(phoneNumber != null);
+
         }
     }
 }
